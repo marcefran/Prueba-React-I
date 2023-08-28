@@ -13,7 +13,7 @@ const MiApi = () => {
 
     //FUNCION PARA CONSUMO DE LA API
     const apiAves = async () => {
-        const data = await fetch("https://aves.ninjas.cl/api/birds"); //API PUBLICA 100% DISPONIBLE SIN REGISTRO
+        const data = await fetch("https://aves.ninjas.cl/api/birds"); 
         const dataAves = await data.json();
         setAves(dataAves);
         setLista(dataAves);
